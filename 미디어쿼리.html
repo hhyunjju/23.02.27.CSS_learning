@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            div{
+                border:10px solid green;
+                font-size:60px;
+            }
+            /* screen width>800px */
+            /* 화면의 크기가 800px보다 크다면, 중괄호 안에 있는 수식들이 동작-> (min-width:800px)
+            screen width<800px -> max-width:800px */
+
+            @media(min-width:800px) {
+            div{
+                display:none;
+            }
+        }
+        </style>
+    </head>
+    <body>
+<div>
+Responsive
+
+</div>
+
+    </body>
+</html>
+<!-- 화면의 크기에 따라서 어떤 html요소 즉, div태그를 보였다, 안보였다 하게 할 수 있도록 하는 css기술
+화면이 800px보다 작고 크면!변하는 걸로 해보자. =화면의 크기가 최소한 800px이다.-->

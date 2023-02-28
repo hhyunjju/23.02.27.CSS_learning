@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title> YooTrue </title>
+<style>
+    #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    body {
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid green;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #grid ol {
+        display: block;
+        width: 120px;
+        border-right: 1px solid green;
+        margin: 0;
+        padding: 20px;
+        padding-left: 33px;
+    }
+
+    /* /* block level element가 되면 자연스럽게 나란히 위치할 수 없게 되니까 */
+    #article {
+        padding-left: 50px;
+    }
+
+    @media(max-width:800px) {
+        #grid {
+            display: block;
+        }
+
+        #grid ol {
+            border-right: none;
+        }
+
+        #article {
+            padding-left: 0;
+        }
+
+        h1 {
+            border-bottom: none;
+        }
+    }
+
+
+
+    /* screen width < 800px */
+</style>
+
+<head></head>
+
+<body>
+    <h1>YooTrue</h1>
+    <div id="grid">
+
+        <ol>
+            <li>개요</li>
+            <li>스토리</li>
+            <li>영상의 특징</li>
+        </ol>
+
+        <!-- 왜 ol이었을때는 왼쪽 정렬이 되고 ul이었을 때는 들여쓰기가 되지? -->
+        <div id="article">
+            <h2>개요</h2>
+
+            대한민국의 뷰티 유튜버로 초창기에 여드름성 피부를 완벽히 커버하는 스킬로 유명세를 탔다. 현재는 꾸준한 관리로 흉터도 보이지 않을 정도로 여드름성 피부에서 탈출했다. 메이크업 영상을 올리는 메인
+            채널인 <a href="https://www.youtube.com/user/yootruebeutyroom/">Yoo True</a>, 브이로그 영상을 올리는 <a
+                href="https://www.youtube.com/user/yootruevlog">yoovlog</a>, 유튜브 생방송을 진행하고 생방송 편집본이 올라오는 <a
+                href="https://www.youtube.com/channel/UCZCvbWrBFGQeZwf5qczqLFg">YOOTRUE ON AIR</a> 세 개의 채널을 동시에 운영하고 있다.
+        </div>
+    </div>
+</body>
+
+</html>
